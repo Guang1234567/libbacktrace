@@ -30,6 +30,8 @@ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
 IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.  */
 
+#ifdef __linux__
+
 #include "config.h"
 
 #include <errno.h>
@@ -4917,3 +4919,4 @@ backtrace_initialize (struct backtrace_state *state, const char *filename,
 
   return 1;
 }
+#endif // #ifdef __linux__

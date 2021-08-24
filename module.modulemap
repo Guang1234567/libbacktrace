@@ -1,0 +1,4 @@
+module libbacktrace [extern_c] {
+    header "backtrace.h"
+    export *
+}

@@ -30,6 +30,8 @@ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
 IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.  */
 
+#ifdef __APPLE__
+
 #include "config.h"
 
 #include <sys/types.h>
@@ -1353,3 +1355,5 @@ backtrace_initialize (struct backtrace_state *state, const char *filename,
 }
 
 #endif /* !defined (HAVE_MACH_O_DYLD_H) */
+
+#endif // #ifdef __APPLE__

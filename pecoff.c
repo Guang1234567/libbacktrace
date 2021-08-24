@@ -30,6 +30,8 @@ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
 IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.  */
 
+#if defined(_WIN64) || defined(_WIN32)
+
 #include "config.h"
 
 #include <stdlib.h>
@@ -933,3 +935,5 @@ backtrace_initialize (struct backtrace_state *state,
 
   return 1;
 }
+
+#endif // #if defined(_WIN64) || defined(_WIN32)
