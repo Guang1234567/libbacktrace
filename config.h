@@ -25,7 +25,7 @@
 #define HAVE_DLFCN_H 1
 
 /* Define if dl_iterate_phdr is available. */
-/* #undef HAVE_DL_ITERATE_PHDR */
+#define HAVE_DL_ITERATE_PHDR 1
 
 /* Define to 1 if you have the fcntl function */
 #define HAVE_FCNTL 1
@@ -51,7 +51,7 @@
 /* #undef HAVE_LIBLZMA */
 
 /* Define to 1 if you have the <link.h> header file. */
-/* #undef HAVE_LINK_H */
+#define HAVE_LINK_H 1
 
 /* Define if AIX loadquery is available. */
 /* #undef HAVE_LOADQUERY */
