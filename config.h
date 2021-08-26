@@ -60,7 +60,9 @@
 #define HAVE_LSTAT 1
 
 /* Define to 1 if you have the <mach-o/dyld.h> header file. */
+#ifdef __APPLE__
 #define HAVE_MACH_O_DYLD_H 1
+#endif
 
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
